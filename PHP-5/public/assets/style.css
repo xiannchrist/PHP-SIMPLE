@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #f7fbff, #deebf7);
+    color: #17324a;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 28px 14px 48px;
+}
+
+.hero,
+.panel {
+    background: #ffffff;
+    border-radius: 22px;
+    box-shadow: 0 18px 40px rgba(23, 50, 74, 0.1);
+}
+
+.hero {
+    padding: 26px;
+    margin-bottom: 24px;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #4f7fa9;
+    font-weight: 700;
+}
+
+.panel {
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.flash,
+.errors {
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+}
+
+.flash {
+    background: #dff2e4;
+    color: #1e6831;
+}
+
+.errors {
+    background: #fde7e7;
+    color: #8b2323;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+label {
+    display: grid;
+    gap: 8px;
+    font-weight: 700;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #c6d6e4;
+    border-radius: 12px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+textarea {
+    min-height: 96px;
+    resize: vertical;
+}
+
+.full {
+    grid-column: 1 / -1;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+button,
+.button-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 16px;
+    border: 0;
+    border-radius: 12px;
+    background: #17466f;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button-link.secondary {
+    background: #809ab3;
+}
+
+button.danger {
+    background: #aa2e2e;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8ef;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #eef5fb;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.actions-cell {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.actions-cell form {
+    margin: 0;
+}

@@ -1,0 +1,128 @@
+* { 
+    box-sizing: border-box; 
+}
+
+body {
+     margin: 0; 
+     font-family: Arial, Helvetica, sans-serif; 
+     background: #f3f7fb; 
+     color: #1a2f45; 
+    }
+
+.wrapper { 
+    max-width: 1180px; 
+    margin: 0 auto; 
+    padding: 28px 14px 40px; 
+}
+
+.page-header, .panel { 
+    background: #fff; 
+    border-radius: 20px; 
+    box-shadow: 0 15px 35px rgba(26, 47, 69, 0.1); 
+}
+
+.page-header { 
+    padding: 24px;
+    margin-bottom: 22px; 
+}
+
+.eyebrow { 
+    margin: 0 0 8px; 
+    text-transform: uppercase; 
+    font-size: 12px; 
+    letter-spacing: .08em; 
+    font-weight: 700; 
+    color: #4e7aa7; 
+}
+
+.panel { 
+    padding: 24px;
+    margin-bottom: 22px; 
+}
+
+.form-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 16px; 
+}
+
+label { 
+    display: grid; 
+    gap: 8px; 
+    font-weight: 700;
+ }
+        
+ input, select, textarea { 
+    width: 100%; 
+    padding: 12px 14px; 
+    border: 1px solid #c8d6e5; 
+    border-radius: 12px; 
+    font-size: 15px; 
+    font-family: inherit; 
+}
+
+textarea {
+        min-height: 100px; 
+        resize: vertical; 
+}
+
+.full { 
+    grid-column: 1 / -1; 
+}
+
+.actions { 
+    display: flex; 
+    gap: 12px; 
+    align-items: center; 
+}
+
+button {
+    border: 0; 
+    border-radius: 12px; 
+    padding: 12px 18px; 
+    background: #1a4f82; 
+    color: #fff; 
+    font-weight: 700; 
+    cursor: pointer; 
+}
+
+.button-secondary { 
+    background: #7392b0; 
+}
+
+.alert, .errors {
+    border-radius: 14px; 
+    padding: 14px 16px; 
+    margin-bottom: 18px; 
+}
+
+.alert { 
+    background: #d9f3df; 
+    color: #1f6a31; 
+}
+       
+.errors { 
+    background: #fde7e7; 
+    color: #8e2323;
+ }
+        
+ table { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+th, td { 
+    padding: 12px; 
+    border-bottom: 
+    1px solid #e2e8ef; 
+    text-align: left; 
+    vertical-align: top; 
+}
+
+ th { 
+    background: #eff5fb; 
+}
+
+ .table-wrap { 
+    overflow-x: auto; 
+}
